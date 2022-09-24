@@ -1,21 +1,21 @@
-// index controller
+// Index Controller
 
-export function helloWorld(req, res, next) {
-  res.render("index.ejs", { title: "hello", page: "home" });
+export function displayHomePage(req, res, next) {
+  res.render("index", { title: "Home", page: "home" });
 }
 
-export function displayAbout(req, res, next) {
-  res.render("index.ejs", { title: "about", page: "about" });
+export function displayAboutPage(req, res, next) {
+  res.render("index", { title: "About", page: "about" });
 }
 
-export function displayProjects(req, res, next) {
-  res.render("index.ejs", { title: "projects", page: "projects" });
+export function displayContactPage(req, res, next) {
+  res.render("index", { title: "Contact", page: "contact" });
 }
 
-export function displayServices(req, res, next) {
-  res.render("index.ejs", { title: "services", page: "services" });
+export function displayProjectsPage(req, res, next) {
+  res.render("index", { title: "Projects", page: "projects" });
 }
 
-export function displayContact(req, res, next) {
-  res.render("index.ejs", { title: "contact", page: "contact" });
+export function displayServicesPage(req, res, next) {
+  res.render("index", { title: "Services", page: "services" });
 }
