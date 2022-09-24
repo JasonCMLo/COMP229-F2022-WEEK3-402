@@ -5,7 +5,7 @@ import {
   displayContact,
   displayProjects,
   displayServices,
-  helloWorld,
+  displayHome,
 } from "../controllers/index.controller.server.js";
 import { displayAbout } from "../controllers/index.controller.server.js";
 
@@ -13,8 +13,8 @@ import { displayAbout } from "../controllers/index.controller.server.js";
 
 const router = Router();
 
-router.get("/", helloWorld);
-router.use("/hello", helloWorld);
+router.get("/", displayHome);
+router.use("/home", displayHome);
 router.use("/about", displayAbout);
 router.get("/projects", displayProjects);
 
